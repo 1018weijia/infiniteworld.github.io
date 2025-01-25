@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <meta charset="utf-8">
   <meta name="description"
-        content="Unleashing Large-Scale Video Generative Pre-training for Visual Robot Manipulation.">
+    content="InfiniteWorld: A Unified Scalable Simulation Framework for General Visual-Language Robot Interaction">
   <meta name="keywords" content="imitation learning, force-control, mobile manipulation, robots ">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Unleashing Large-Scale Video Generative Pre-training for Visual Robot Manipulation</title>
@@ -22,15 +23,13 @@
     gtag('config', 'G-PYVRSFMDRL');
   </script>
 
-  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
-        rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
 
   <link rel="stylesheet" href="./static/css/bulma.min.css">
   <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
   <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
   <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
-  <link rel="stylesheet"
-        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
   <link rel="stylesheet" href="./static/css/index.css">
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -39,193 +38,224 @@
   <script src="./static/js/bulma-slider.min.js"></script>
   <script src="./static/js/index.js"></script>
 </head>
+
 <body>
 
 
-<section class="hero">
-  <div class="hero-body">
-    <h1 style="font-size: 55px; font-weight: bold; text-align: center;">Unleashing Large-Scale Video Generative Pre-training <br> for Visual Robot Manipulation</h1>
-    <div class="container is-max-desktop">
-      <div class="columns is-centered">
-        <div class="column has-text-centered">
-          <div class="is-size-5 publication-authors" style="padding-top: 10px;">
-            <span class="author-block">
-              Hongtao Wu<sup>&dagger;</sup>,
-            </span>
-            <span class="author-block">
-              Ya Jing<sup>&dagger;</sup>,
-            </span>
-            <span class="author-block">
-              Chilam Cheang,
-            </span>
-            <span class="author-block">
-              Guangzeng Chen,
-            </span>
-            <span class="author-block">
-              Jiafeng Xu,
-            </span>
-          </div>
-          <div class="is-size-5 publication-authors">
-            <span class="author-block">
-              Xinghang Li,
-            </span>
-            <span class="author-block">
-              Minghuan Liu,
-            </span>
-            <span class="author-block">
-              Hang Li,
-            </span>
-            <span class="author-block">
-              Tao Kong
-            </span>
-          </div>
-          <br>
-
-          <div class="is-size-5 publication-authors">
-            <span class="author-block">ByteDance Research &nbsp;&nbsp;</span>
-            <br>
-            <span style="font-size: 24px;"><sup>&dagger;</sup>Equal Contribution</span>
-          </div>
-
+  <section class="hero">
+    <div class="hero-body">
+      <h1 style="font-size: 55px; font-weight: bold; text-align: center;">InfiniteWorld: A Unified Scalable Simulation
+        Framework <br> for General Visual-Language Robot Interaction</h1>
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
           <div class="column has-text-centered">
-            <div class="publication-links">
-              <!-- Arxiv Link. -->
-              <span class="link-block">
-                <a href="https://arxiv.org/pdf/2312.13139.pdf"
-                   class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
+            <div class="is-size-5 publication-authors" style="padding-top: 10px;">
+              <span class="author-block">
+                Pengzhen Ren<sup>&dagger;</sup>,
+              </span>
+              <span class="author-block">
+                Min lin,
+              </span>
+              <span class="author-block">
+                Zhen Luo,
+              </span>
+              <span class="author-block">
+                Xinshuai Song,
+              </span>
+              <span class="author-block">
+                Ziwei Chen,
+              </span>
+            </div>
+
+            <div class="is-size-5 publication-authors">
+              <span class="author-block">
+                Weijia Liufu,
+              </span>
+              <span class="author-block">
+                Yixuan Yang,
+              </span>
+              <span class="author-block">
+                Hao Zheng,
+              </span>
+              <span class="author-block">
+                Rongtao Xu
+              </span>
+              <span class="author-block">
+                Zitong Huang
+              </span>
+              <span class="author-block">
+                Tongsheng Ding
+              </span>
+              <span class="author-block">
+                Luyang Xie
+              </span>
+              <span class="author-block">
+                Kaidong Zhang
+              </span>
+              <span class="author-block">
+                Changfei Fu
+              </span>
+              <span class="author-block">
+                Yang Liu
+              </span>
+              <span class="author-block">
+                Liang Lin
+              </span>
+              <span class="author-block">
+                Feng Zheng
+              </span>
+              <span class="author-block">
+                Xiaodan Liang
+              </span>
+            </div>
+            <br>
+
+            <div class="is-size-5 publication-authors">
+              <span class="author-block">ByteDance Research &nbsp;&nbsp;</span>
+              <br>
+              <span style="font-size: 24px;"><sup>&dagger;</sup>Equal Contribution</span>
+            </div>
+
+            <div class="column has-text-centered">
+              <div class="publication-links">
+                <!-- Arxiv Link. -->
+                <span class="link-block">
+                  <a href="https://arxiv.org/pdf/2412.05789" class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
                       <i class="ai ai-arxiv"></i>
-                  </span>
-                  <span style="font-size: 22px;">arXiv</span>
-                </a>
-              </span>
-              <!-- PDF Link. -->
-              <span class="link-block">
-                <a href="static/paper.pdf"
-                   class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                      <i class="fas fa-file-pdf"></i>
-                  </span>
-                  <span style="font-size: 22px;">Paper</span>
-                </a>
-              </span>
-              <!-- Code Link. -->
-              <span class="link-block">
-                <a href="https://github.com/bytedance/GR-1"
-                   class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                      <i class="fab fa-github"></i>
-                  </span>
-                  <span style="font-size: 22px;">Code</span>
+                    </span>
+                    <span style="font-size: 22px;">arXiv</span>
                   </a>
-              </span>
+                </span>
+                <!-- PDF Link. -->
+                <span class="link-block">
+                  <a href="static/paper.pdf" class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                    </span>
+                    <span style="font-size: 22px;">Paper</span>
+                  </a>
+                </span>
+                <!-- Code Link. -->
+                <span class="link-block">
+                  <a href="https://github.com/bytedance/GR-1" class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fab fa-github"></i>
+                    </span>
+                    <span style="font-size: 22px;">Code</span>
+                  </a>
+                </span>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<section class="section">
-  <div class="content has-text-justified">
-    <div class="columns is-centered has-text-centered">
-      <div class="container">
-        <video poster="" id="calvin_0" autoplay controls muted loop playsinline width="24%" style="border-radius: 4%; position: relative; left: -1%;">
-          <source src="static/videos/intro/calvin_0.mp4"
-                  type="video/mp4">
-        </video>
-        <video poster="" id="calvin_1" autoplay controls muted loop playsinline width="24%" style="border-radius: 4%; ; position: relative; left: -0.5%;">
-          <source src="static/videos/intro/calvin_1.mp4"
-                  type="video/mp4">
-        </video>
-        <video poster="" id="calvin_2" autoplay controls muted loop playsinline width="24%" style="border-radius: 4%; position: relative; left: 0.5%;">
-          <source src="static/videos/intro/calvin_2.mp4"
-                  type="video/mp4">
-        </video>
-        <video poster="" id="calvin_3" autoplay controls muted loop playsinline width="24%" style="border-radius: 4%; ; position: relative; left: 1%;">
-          <source src="static/videos/intro/calvin_3.mp4"
-                  type="video/mp4">
-        </video>
+  <section class="section">
+    <div class="content has-text-justified">
+      <div class="columns is-centered has-text-centered">
+        <div class="container">
+          <video poster="" id="calvin_0" autoplay controls muted loop playsinline width="24%"
+            style="border-radius: 4%; position: relative; left: -1%;">
+            <source src="static/videos/intro/calvin_0.mp4" type="video/mp4">
+          </video>
+          <video poster="" id="calvin_1" autoplay controls muted loop playsinline width="24%"
+            style="border-radius: 4%; ; position: relative; left: -0.5%;">
+            <source src="static/videos/intro/calvin_1.mp4" type="video/mp4">
+          </video>
+          <video poster="" id="calvin_2" autoplay controls muted loop playsinline width="24%"
+            style="border-radius: 4%; position: relative; left: 0.5%;">
+            <source src="static/videos/intro/calvin_2.mp4" type="video/mp4">
+          </video>
+          <video poster="" id="calvin_3" autoplay controls muted loop playsinline width="24%"
+            style="border-radius: 4%; ; position: relative; left: 1%;">
+            <source src="static/videos/intro/calvin_3.mp4" type="video/mp4">
+          </video>
+        </div>
       </div>
-    </div>
-    <div class="columns is-centered has-text-centered">
-      <div class="container">
-        <div id="results-carousel" class="carousel results-carousel">
-           <div class="item open_the_drawer">
-            <video poster="" id="open_the_drawer" autoplay controls muted loop playsinline height="90%">
-              <source src="static/videos/real_exp/open_the_drawer.mp4"
-                      type="video/mp4">
-            </video>
-          </div>
-          <div class="item 3task_distractor">
-            <video poster="" id="3task_distractor" autoplay controls muted loop playsinline height="90%">
-              <source src="static/videos/intro/3task_distractor.mp4"
-                      type="video/mp4">
-            </video>
-          </div>
-          <div class="item 3task_unseen">
-            <video poster="" id="3task_unseen" autoplay controls muted loop playsinline height="90%">
-              <source src="static/videos/intro/3task_unseen.mp4"
-                      type="video/mp4">
-            </video>
-          </div>
-          <div class="item 3task_normal">
-            <video poster="" id="3task_normal" autoplay controls muted loop playsinline height="90%">
-              <source src="static/videos/intro/3task_normal.mp4"
-                      type="video/mp4">
-            </video>
+      <div class="columns is-centered has-text-centered">
+        <div class="container">
+          <div id="results-carousel" class="carousel results-carousel">
+            <div class="item open_the_drawer">
+              <video poster="" id="open_the_drawer" autoplay controls muted loop playsinline height="90%">
+                <source src="static/videos/real_exp/open_the_drawer.mp4" type="video/mp4">
+              </video>
+            </div>
+            <div class="item 3task_distractor">
+              <video poster="" id="3task_distractor" autoplay controls muted loop playsinline height="90%">
+                <source src="static/videos/intro/3task_distractor.mp4" type="video/mp4">
+              </video>
+            </div>
+            <div class="item 3task_unseen">
+              <video poster="" id="3task_unseen" autoplay controls muted loop playsinline height="90%">
+                <source src="static/videos/intro/3task_unseen.mp4" type="video/mp4">
+              </video>
+            </div>
+            <div class="item 3task_normal">
+              <video poster="" id="3task_normal" autoplay controls muted loop playsinline height="90%">
+                <source src="static/videos/intro/3task_normal.mp4" type="video/mp4">
+              </video>
+            </div>
           </div>
         </div>
       </div>
+
     </div>
 
-  </div>
-
-  <div class="columns is-centered has-text-centered">
+    <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
         <div class="content has-text-justified">
           <p style="font-size: 24px;">
-            Generative pre-trained models have demonstrated remarkable effectiveness in language and vision domains by learning useful representations. 
-            In this paper, we extend the scope of this effectiveness by showing that <b> visual robot manipulation </b> can significantly benefit from <b>large-scale video generative pre-training</b>. 
-            We introduce <b>GR-1</b>, a straightforward GPT-style model designed for multi-task language-conditioned visual robot manipulation.
-            GR-1 takes as inputs a language instruction, a sequence of observation images, and a sequence of robot states. 
+            Generative pre-trained models have demonstrated remarkable effectiveness in language and vision domains by
+            learning useful representations.
+            In this paper, we extend the scope of this effectiveness by showing that <b> visual robot manipulation </b>
+            can significantly benefit from <b>large-scale video generative pre-training</b>.
+            We introduce <b>GR-1</b>, a straightforward GPT-style model designed for multi-task language-conditioned
+            visual robot manipulation.
+            GR-1 takes as inputs a language instruction, a sequence of observation images, and a sequence of robot
+            states.
             It predicts robot actions as well as future images in <b> an end-to-end manner </b>.
-            Thanks to a flexible design, GR-1 can be seamlessly finetuned on robot data after pre-trained on a large-scale video dataset.
-            We provide inaugural evidence that a unified GPT-style transformer, augmented with large-scale video generative pre-training, exhibits remarkable generalization to multi-task visual robot manipulation. <br>
+            Thanks to a flexible design, GR-1 can be seamlessly finetuned on robot data after pre-trained on a
+            large-scale video dataset.
+            We provide inaugural evidence that a unified GPT-style transformer, augmented with large-scale video
+            generative pre-training, exhibits remarkable generalization to multi-task visual robot manipulation. <br>
           </p>
         </div>
       </div>
     </div>
-</section>
+  </section>
 
-<section class="section">
-  <div class="columns is-centered has-text-centered">
+  <section class="section">
+    <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
         <h2 class="title is-1">Method</h2>
         <video poster="" id="overview" autoplay muted loop playsinline width="70%">
-            <source src="static/videos/intro/overview.mp4"
-                    type="video/mp4">
+          <source src="static/videos/intro/overview.mp4" type="video/mp4">
         </video>
         <div class="content is-centered has-text-justified">
-          <p  style="font-size: 24px;">
+          <p style="font-size: 24px;">
             <br>
             GR-1 is first pre-trained on the task of video prediction with a large-scale video dataset.
             It is then finetuned on robot data to learn multi-task visual robot manipulation.
-            GR-1 is a simple GPT-style transformer which is able to take different modalities as inputs and outputs future images and actions.
+            GR-1 is a simple GPT-style transformer which is able to take different modalities as inputs and outputs
+            future images and actions.
             <br>
           </p>
         </div>
         <div class="columns is-centered has-text-centered">
-            <img id="encoder_decoder" width="80%" src="static/images/encoder_decoder.png"/>
+          <img id="encoder_decoder" width="80%" src="static/images/encoder_decoder.png" />
         </div>
         <div class="content is-centered has-text-justified">
-          <p  style="font-size: 24px;">
+          <p style="font-size: 24px;">
             The language input is encoded via CLIP text encoder.
             Visual inputs are encoded via a vision transformer which has been pretrained with MAE.
             A perceiver resampler is used to reduce the token number.
-            Robot states, which contains the 6D pose of the robot end-effector and a binary status of the gripper, are encoded via linear layers.
-            Before being fed into the causal transformer, the embeddings of all modalities are passed through linear layers to align the dimension.
+            Robot states, which contains the 6D pose of the robot end-effector and a binary status of the gripper, are
+            encoded via linear layers.
+            Before being fed into the causal transformer, the embeddings of all modalities are passed through linear
+            layers to align the dimension.
             Future images are predicted with a transformer decoder consisting of self-attention blocks and MLPs.
             Arm and gripper actions are predicted via linear layers.
             More details can be found in the paper.
@@ -233,10 +263,10 @@
         </div>
       </div>
     </div>
-</section>
+  </section>
 
-<section class="section">
-  <div class="columns is-centered has-text-centered">
+  <section class="section">
+    <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
         <h2 class="title is-1">Real Robot Experiments</h2>
         <img id="robot_result" width="80%" src="static/images/real_robot.png">
@@ -244,23 +274,28 @@
           <br>
           <p style="font-size: 24px;">
             We perform extensive end-to-end real robot experiments to evaluate how GR-1 works in the real world.
-            We first evaluate on object transportation in three settings: Seen Objects, Unseen Instances (unseen object instances of seen categories), and Unseen Categories (unseen objects of unseen categories).
+            We first evaluate on object transportation in three settings: Seen Objects, Unseen Instances (unseen object
+            instances of seen categories), and Unseen Categories (unseen objects of unseen categories).
             Example instructions include "put the broccoli onto the plate".
-            This task is challenging as the robot needs to ground the correct object in the scene and successfully grasp and place it in the correct area.
+            This task is challenging as the robot needs to ground the correct object in the scene and successfully grasp
+            and place it in the correct area.
             We also perform experiments on contact-rich articulated object manipulation.
             Example instructions include "open the drawer".
             Results are shown in the below figure.
           </p>
           <div class="columns is-centered has-text-centered">
-            <img id="robot_result" width="40%" src="static/images/real_results.png"/>
+            <img id="robot_result" width="40%" src="static/images/real_results.png" />
           </div>
           <br>
           <p style="font-size: 24px;">
             <b>1. Seen Objects</b><br>
             In this setting, there are three objects, i.e. a broccoli, an eggplant, and a bell pepper.
-            The robot is trained to perform transporting one of the three objects from the plate to the table or vice versa.
-            We evaluate the performance on transporting these three objects in 1) training scenes 2) scenes with distrators and 3) scenes with background changes and distrators.
-            In the scenes with distractors, we introduce three unseen objects, i.e. a corn, a tomato, and a yellow peach.
+            The robot is trained to perform transporting one of the three objects from the plate to the table or vice
+            versa.
+            We evaluate the performance on transporting these three objects in 1) training scenes 2) scenes with
+            distrators and 3) scenes with background changes and distrators.
+            In the scenes with distractors, we introduce three unseen objects, i.e. a corn, a tomato, and a yellow
+            peach.
             In the scenes with background changes and distrators, we futher add a wooden board and an unseen bowl.
             GR-1 outperforms comparing baseline methods and achieve a high success rate in this setting.
           </p>
@@ -268,45 +303,39 @@
           <div class="container">
             <div id="results-carousel" class="carousel results-carousel">
               <div class="item unseen_cat_0">
-  
+
                 <video poster="" id="unseen_cat_0" autoplay controls muted loop playsinline height="90%">
-                  <source src="static/videos/real_exp/normal_put_the_bell_pepper_onto_the_plate.mp4"
-                          type="video/mp4">
+                  <source src="static/videos/real_exp/normal_put_the_bell_pepper_onto_the_plate.mp4" type="video/mp4">
                 </video>
               </div>
               <div class="item unseen_cat_1">
-  
+
                 <video poster="" id="unseen_cat_1" autoplay controls muted loop playsinline height="90%">
-                  <source src="static/videos/real_exp/distractor_put_the_broccoli_onto_the_desk.mp4"
-                          type="video/mp4">
+                  <source src="static/videos/real_exp/distractor_put_the_broccoli_onto_the_desk.mp4" type="video/mp4">
                 </video>
               </div>
               <div class="item unseen_inst_0">
-  
+
                 <video poster="" id="unseen_inst_0" autoplay controls muted loop playsinline height="90%">
-                  <source src="static/videos/real_exp/bg_put_the_bell_pepper_onto_the_plate.mp4"
-                          type="video/mp4">
+                  <source src="static/videos/real_exp/bg_put_the_bell_pepper_onto_the_plate.mp4" type="video/mp4">
                 </video>
               </div>
               <div class="item unseen_inst_1">
-  
+
                 <video poster="" id="unseen_inst_1" autoplay controls muted loop playsinline height="90%">
-                  <source src="static/videos/real_exp/normal_put_the_eggplant_onto_the_plate.mp4"
-                          type="video/mp4">
+                  <source src="static/videos/real_exp/normal_put_the_eggplant_onto_the_plate.mp4" type="video/mp4">
                 </video>
               </div>
               <div class="item unseen_inst_1">
-  
+
                 <video poster="" id="unseen_inst_1" autoplay controls muted loop playsinline height="90%">
-                  <source src="static/videos/real_exp/distractor_put_the_eggplant_onto_the_plate.mp4"
-                          type="video/mp4">
+                  <source src="static/videos/real_exp/distractor_put_the_eggplant_onto_the_plate.mp4" type="video/mp4">
                 </video>
               </div>
               <div class="item unseen_inst_1">
-  
+
                 <video poster="" id="unseen_inst_1" autoplay controls muted loop playsinline height="90%">
-                  <source src="static/videos/real_exp/bg_put_the_eggplant_onto_the_desk.mp4"
-                          type="video/mp4">
+                  <source src="static/videos/real_exp/bg_put_the_eggplant_onto_the_desk.mp4" type="video/mp4">
                 </video>
               </div>
             </div>
@@ -315,45 +344,46 @@
             <br>
             <b>2. Unseen Instances & Unseen Categories</b><br>
             In these two settings, we challenge the robot to transport unseen objects.
-            There are five objects in the scene, i.e. a broccoli, an eggplant, a bell pepper, a yellow peach and a tomato.
-            While "broccoli", "eggplant", and "bell peper" are seen in the languages during finetuning, these three instances are unseen in the robot training data.
+            There are five objects in the scene, i.e. a broccoli, an eggplant, a bell pepper, a yellow peach and a
+            tomato.
+            While "broccoli", "eggplant", and "bell peper" are seen in the languages during finetuning, these three
+            instances are unseen in the robot training data.
             In Unseen Instances, we command the robot to transport these three instances.
             Both "yellow peach" and "tomato" are unseen in the languages of the robot training data.
             In Unseen Categories, the robot is instructed to transport these two objects.
             The performance of GR-1 drops when evaluted on unseen objects.
             However, it is surprising that the drop for Unseen Instances is modest.
             This demostrate GR-1 possesses strong zero-shot generalization to unseen instances.
-            In the most challenging setting of unseen categories, a typical failure mode is that GR-1 sometimes mixes up the bell pepper with the peach which has a similar color.
+            In the most challenging setting of unseen categories, a typical failure mode is that GR-1 sometimes mixes up
+            the bell pepper with the peach which has a similar color.
             <br>
           </p>
           <div class="container">
             <div id="results-carousel" class="carousel results-carousel">
               <div class="item unseen_cat_0">
-  
+
                 <video poster="" id="unseen_cat_0" autoplay controls muted loop playsinline height="90%">
-                  <source src="static/videos/real_exp/unseen_cat_put_the_tomato_onto_the_plate.mp4"
-                          type="video/mp4">
+                  <source src="static/videos/real_exp/unseen_cat_put_the_tomato_onto_the_plate.mp4" type="video/mp4">
                 </video>
               </div>
               <div class="item unseen_cat_1">
-  
+
                 <video poster="" id="unseen_cat_1" autoplay controls muted loop playsinline height="90%">
                   <source src="static/videos/real_exp/unseen_cat_put_the_yellow_peach_onto_the_desk.mp4"
-                          type="video/mp4">
+                    type="video/mp4">
                 </video>
               </div>
               <div class="item unseen_inst_0">
-  
+
                 <video poster="" id="unseen_inst_0" autoplay controls muted loop playsinline height="90%">
                   <source src="static/videos/real_exp/unseen_inst_put_the_bell_pepper_onto_the_plate.mp4"
-                          type="video/mp4">
+                    type="video/mp4">
                 </video>
               </div>
               <div class="item unseen_inst_1">
-  
+
                 <video poster="" id="unseen_inst_1" autoplay controls muted loop playsinline height="90%">
-                  <source src="static/videos/real_exp/unseen_inst_put_the_eggplant_onto_the_plate.mp4"
-                          type="video/mp4">
+                  <source src="static/videos/real_exp/unseen_inst_put_the_eggplant_onto_the_plate.mp4" type="video/mp4">
                 </video>
               </div>
             </div>
@@ -365,17 +395,18 @@
             In this experiment, we aim to evaluate GR-1 on handling contact-rich articulated object manipulation.
             We train GR-1 to open and close a drawer.
             GR-1 outperforms the comparing baseline methods.
-            Typical failure modes of GR-1 include 1) failing to completely close the drawer in the closing task and 2) failing to engage with the drawer handle when pulling it out in the opening task.
+            Typical failure modes of GR-1 include 1) failing to completely close the drawer in the closing task and 2)
+            failing to engage with the drawer handle when pulling it out in the opening task.
           </p>
 
           <div class="container">
-            <video poster="" id="open_the_drawer" autoplay controls muted loop playsinline width="33%" style="border-radius: 4%; position: relative; left: 16%;">
-              <source src="static/videos/real_exp/open_the_drawer.mp4"
-                      type="video/mp4">
+            <video poster="" id="open_the_drawer" autoplay controls muted loop playsinline width="33%"
+              style="border-radius: 4%; position: relative; left: 16%;">
+              <source src="static/videos/real_exp/open_the_drawer.mp4" type="video/mp4">
             </video>
-            <video poster="" id="close_the_drawer" autoplay controls muted loop playsinline width="33%" style="border-radius: 4%; position: relative; left: 17%;">
-              <source src="static/videos/real_exp/close_the_drawer.mp4"
-                      type="video/mp4">
+            <video poster="" id="close_the_drawer" autoplay controls muted loop playsinline width="33%"
+              style="border-radius: 4%; position: relative; left: 17%;">
+              <source src="static/videos/real_exp/close_the_drawer.mp4" type="video/mp4">
             </video>
           </div>
 
@@ -383,38 +414,44 @@
         </div>
       </div>
     </div>
-</section>
+  </section>
 
-<section class="section">
-  <div class="columns is-centered has-text-centered">
+  <section class="section">
+    <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
         <h2 class="title is-1">CALVIN Benchmark Experiments</h2>
-        <img id="calvin_env" width="70%" src="static/images/calvin_env.png" style="display: block; margin-left: auto; margin-right: auto">
+        <img id="calvin_env" width="70%" src="static/images/calvin_env.png"
+          style="display: block; margin-left: auto; margin-right: auto">
         <div class="content has-text-justified">
           <p style="font-size: 24px;">
             <br>
-            <a href="http://calvin.cs.uni-freiburg.de/"><b>CALVIN</b></a> is a challenging benchmark focusing on learning language-conditioned policy for long-horizon robot manipulation.
+            <a href="http://calvin.cs.uni-freiburg.de/"><b>CALVIN</b></a> is a challenging benchmark focusing on
+            learning language-conditioned policy for long-horizon robot manipulation.
             It contains 34 manipulation tasks and features unconstrained language instructions.
-            The environment contains a Franka Emika Panda robot with a parallel-jaw gripper and a desk with a sliding door, a drawer that can be opened or closed, blocks with different colors, an LED, and a light bulb that can be turned on or off.
+            The environment contains a Franka Emika Panda robot with a parallel-jaw gripper and a desk with a sliding
+            door, a drawer that can be opened or closed, blocks with different colors, an LED, and a light bulb that can
+            be turned on or off.
             CALVIN contains 4 different environments A, B, C, and D.
             These four environments are different in desk colors and object configurations.
             We perform experiments on CALVIN in four settings.<br>
           </p>
           <div class="columns">
             <div class="column has-text-left">
-                <img src="static/images/ABCD_D.png" class="interpolation-image"
-                alt="" style="display: block; margin-left: auto; margin-right: auto" width="70%"/>
+              <img src="static/images/ABCD_D.png" class="interpolation-image" alt=""
+                style="display: block; margin-left: auto; margin-right: auto" width="70%" />
             </div>
             <div class="column has-text-left">
-                <img src="static/images/ABC_D.png" class="interpolation-image"
-              alt="" style="display: block; margin-left: auto; margin-right: auto" width="70%"/>
+              <img src="static/images/ABC_D.png" class="interpolation-image" alt=""
+                style="display: block; margin-left: auto; margin-right: auto" width="70%" />
             </div>
           </div>
           <div class="content has-text-justified">
             <b style="font-size: 24px;">1. Long-Horizon Multi-Task Learning (ABCD->D)</b> <br>
-            <p  style="font-size: 24px;">
-              In this setting, the robot is trained with data collected from environments A, B, C, and D and evaluated in environment D.
-              During the evaluation, the robot aims to continuously solve up to 5 tasks by understanding a series of 5 language instructions in a row.
+            <p style="font-size: 24px;">
+              In this setting, the robot is trained with data collected from environments A, B, C, and D and evaluated
+              in environment D.
+              During the evaluation, the robot aims to continuously solve up to 5 tasks by understanding a series of 5
+              language instructions in a row.
               The robot receives the next task only if the current one is successfully completed.
               GR-1 outperforms baseline methods in task success rates.
               In particular, it improves the success rate of completing 5 tasks in a row from 38.3% to 73.1%.
@@ -424,45 +461,54 @@
           </div>
           <div class="content has-text-justified">
             <b style="font-size: 24px;">2. Zero-Shot Generalization to Unseen Scenes (ABC->D)</b> <br>
-            <p  style="font-size: 24px;">
-              In this setting, the robot is trained with data collected from environment A, B, and C and evaluated in environment D, which is unseen during training.
-              The robot needs to understand semantic information from the data collected in environment A, B, and C and generalize them to environment D.
+            <p style="font-size: 24px;">
+              In this setting, the robot is trained with data collected from environment A, B, and C and evaluated in
+              environment D, which is unseen during training.
+              The robot needs to understand semantic information from the data collected in environment A, B, and C and
+              generalize them to environment D.
               GR-1 outperforms baseline methods by a large margin.
-              We hypothesize that the strong generalization capability stems from being exposed to large-scale data in pre-training.<br>
+              We hypothesize that the strong generalization capability stems from being exposed to large-scale data in
+              pre-training.<br>
             </p>
           </div>
           <div class="columns">
             <div class="column has-text-left">
-                <img src="static/images/10_percent_data.png" class="interpolation-image"
-             alt="" style="display: block; margin-left: auto; margin-right: auto" width="70%"/>
+              <img src="static/images/10_percent_data.png" class="interpolation-image" alt=""
+                style="display: block; margin-left: auto; margin-right: auto" width="70%" />
             </div>
             <div class="column has-text-left">
-                <img src="static/images/unseen_lang.png" class="interpolation-image"
-             alt="" style="display: block; margin-left: auto; margin-right: auto" width="70%"/>
+              <img src="static/images/unseen_lang.png" class="interpolation-image" alt=""
+                style="display: block; margin-left: auto; margin-right: auto" width="70%" />
             </div>
           </div>
           <div class="content has-text-justified">
             <b style="font-size: 24px;">3. Data Efficiency (10% ABCD->D)</b><br>
-            <p  style="font-size: 24px;">
-            Robot data is sparse.
-            We want to understand how GR-1 performs when given a small amount of data.
-            We sampled about 10% data from the training data of the ABCD->D split for training.
-            Specifically, we sampled 66 trajectories for each of the 34 tasks, i.e. 2244 trajectories in total (ABCD->D split contains 22966 training trajectories).
-            The performance of all methods degrades.
-            We compare the success rate of each task when trained on the 10% data and the full data.
-            The success rates of tasks involving block manipulation decreases the most.
-            These tasks are difficult because the robot needs to first grasp the correct block and then manipulate it according to the language instruction.
+            <p style="font-size: 24px;">
+              Robot data is sparse.
+              We want to understand how GR-1 performs when given a small amount of data.
+              We sampled about 10% data from the training data of the ABCD->D split for training.
+              Specifically, we sampled 66 trajectories for each of the 34 tasks, i.e. 2244 trajectories in total
+              (ABCD->D split contains 22966 training trajectories).
+              The performance of all methods degrades.
+              We compare the success rate of each task when trained on the 10% data and the full data.
+              The success rates of tasks involving block manipulation decreases the most.
+              These tasks are difficult because the robot needs to first grasp the correct block and then manipulate it
+              according to the language instruction.
             </p>
           </div>
           <div class="content has-text-justified">
             <b style="font-size: 24px;">4. Zero-Shot Generalization to Unseen Languages</b><br>
-            <p  style="font-size: 24px;">
-            Human languages are diverse, i.e. there are different ways of describing a task.
-            We aim to test whether GR-1 is able to generalize to languages that are different from those seen in training.
-            We leveraged <a href="https://openai.com/research/gpt-4"><b>GPT-4</b></a> to generate synonymous instructions for each of the 34 tasks and used these unseen language instructions for evaluation.
-            Examples of generated languages can be found in the below figure.
-            GR-1 is able to generalize to unseen languages with a high success rate.
-            We hypothesize this generalization capability attributes to being exposed to diverse languages in the large video dataset during pre-training and freezing the strong CLIP text encoder during the whole training process.
+            <p style="font-size: 24px;">
+              Human languages are diverse, i.e. there are different ways of describing a task.
+              We aim to test whether GR-1 is able to generalize to languages that are different from those seen in
+              training.
+              We leveraged <a href="https://openai.com/research/gpt-4"><b>GPT-4</b></a> to generate synonymous
+              instructions for each of the 34 tasks and used these unseen language instructions for evaluation.
+              Examples of generated languages can be found in the below figure.
+              GR-1 is able to generalize to unseen languages with a high success rate.
+              We hypothesize this generalization capability attributes to being exposed to diverse languages in the
+              large video dataset during pre-training and freezing the strong CLIP text encoder during the whole
+              training process.
             </p>
           </div>
           <div class="columns is-centered has-text-centered" style="padding-top: 30px;">
@@ -471,76 +517,91 @@
         </div>
       </div>
     </div>
-</section>
+  </section>
 
-<section class="section">
-  <div class="columns is-centered has-text-centered">
+  <section class="section">
+    <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
         <h2 class="title is-1">Ablation Studies and Video Prediction Results</h2>
         <div class="content has-text-justified">
-            <div class="column has-text-left" style="padding-top: 25px;">
-              <p style="font-size: 24px;">
-                GR-1 features video prediction and large-scale pretraining on video prediction.
-                We perform ablation studies to study how these two factors influence the performance.
-                GR-1 outperforms the variant without pre-training and the variant without pre-training and video prediction in all experiments. 
-                We hypothesize that this is because the large-scale video pre-training helps GR-1 learn an accurate video prediction model which helps the robot understand what shall happen in future steps given the language instruction and previous observations. 
-                And this information acts as a strong signpost for the robot to generate pertinent actions for rolling out trajectories. 
-                Without pre-training, the video prediction of GR-1 w/o Video Pre-training may not be as robust.
-                <br><br>
-              </p>
+          <div class="column has-text-left" style="padding-top: 25px;">
+            <p style="font-size: 24px;">
+              GR-1 features video prediction and large-scale pretraining on video prediction.
+              We perform ablation studies to study how these two factors influence the performance.
+              GR-1 outperforms the variant without pre-training and the variant without pre-training and video
+              prediction in all experiments.
+              We hypothesize that this is because the large-scale video pre-training helps GR-1 learn an accurate video
+              prediction model which helps the robot understand what shall happen in future steps given the language
+              instruction and previous observations.
+              And this information acts as a strong signpost for the robot to generate pertinent actions for rolling out
+              trajectories.
+              Without pre-training, the video prediction of GR-1 w/o Video Pre-training may not be as robust.
+              <br><br>
+            </p>
+          </div>
+          <div class="columns">
+            <div class="column has-text-left">
+              <img src="static/images/ablation_ABCD_D.png" class="interpolation-image" alt=""
+                style="display: block; margin-left: auto; margin-right: auto" />
             </div>
-            <div class="columns">
-              <div class="column has-text-left">
-                  <img src="static/images/ablation_ABCD_D.png" class="interpolation-image"
-                  alt="" style="display: block; margin-left: auto; margin-right: auto"/>
-              </div>
-              <div class="column has-text-left">
-                  <img src="static/images/ablation_ABC_D.png" class="interpolation-image"
-                alt="" style="display: block; margin-left: auto; margin-right: auto"/>
-              </div>
-              <div class="column has-text-left">
-                <img src="static/images/ablation_10_percent_data.png" class="interpolation-image"
-              alt="" style="display: block; margin-left: auto; margin-right: auto"/>
+            <div class="column has-text-left">
+              <img src="static/images/ablation_ABC_D.png" class="interpolation-image" alt=""
+                style="display: block; margin-left: auto; margin-right: auto" />
             </div>
+            <div class="column has-text-left">
+              <img src="static/images/ablation_10_percent_data.png" class="interpolation-image" alt=""
+                style="display: block; margin-left: auto; margin-right: auto" />
             </div>
-            <div class="column has-text-left" style="padding-top: 25px;">
-              <p style="font-size: 24px;">
-                We probe into GR-1 to investigate its video prediction performance on CALVIN and real robot data.
-                Results are shown in the below figure in which the images in the green boxes are the ground-truth images and those in the blue boxes are the predicted images.
-                GR-1 is able to reconstruct future frames correctly on both CALVIN data and real robot data, although some details (e.g. occluded objects) are missing. 
-                This video prediction signal can serve as a strong guide for action predictions.
-                More results can be found in the paper.
-              </p>
-            </div>
-            <img id="robot_result" width="65%" style="display: block;margin-left: auto; margin-right: auto;" src="static/images/fwd_pred.png">
+          </div>
+          <div class="column has-text-left" style="padding-top: 25px;">
+            <p style="font-size: 24px;">
+              We probe into GR-1 to investigate its video prediction performance on CALVIN and real robot data.
+              Results are shown in the below figure in which the images in the green boxes are the ground-truth images
+              and those in the blue boxes are the predicted images.
+              GR-1 is able to reconstruct future frames correctly on both CALVIN data and real robot data, although some
+              details (e.g. occluded objects) are missing.
+              This video prediction signal can serve as a strong guide for action predictions.
+              More results can be found in the paper.
+            </p>
+          </div>
+          <img id="robot_result" width="65%" style="display: block;margin-left: auto; margin-right: auto;"
+            src="static/images/fwd_pred.png">
         </div>
       </div>
     </div>
-</section>
+  </section>
 
-<section class="section">
-  <div class="columns is-centered has-text-centered">
+  <section class="section">
+    <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
         <h2 class="title is-1">Conclusions and Future Work</h2>
         <div class="content has-text-justified">
           <p style="font-size: 24px;">
-            In this paper, we propose to leverage large-scale video generative pre-training for enhancing visual robot manipulation learning. 
-            We present GR-1, a strightforward GPT-style transformer that takes as input a language instruction, a sequence of observation images and robot states, and outputs actions and future images in an end-to-end manner. 
-            GR-1 is first pre-trained on language-conditioned video prediction with a large-scale video dataset. 
-            Owing to a flexible design, it can then be seamlessly finetuned on robot data to predict actions and future frames.
+            In this paper, we propose to leverage large-scale video generative pre-training for enhancing visual robot
+            manipulation learning.
+            We present GR-1, a strightforward GPT-style transformer that takes as input a language instruction, a
+            sequence of observation images and robot states, and outputs actions and future images in an end-to-end
+            manner.
+            GR-1 is first pre-trained on language-conditioned video prediction with a large-scale video dataset.
+            Owing to a flexible design, it can then be seamlessly finetuned on robot data to predict actions and future
+            frames.
             GR-1 shows strong performance in both simulation and real robot experiments.
-            By incorporating large-scale video data, we showcase that GR-1 is able to perform robustly in scenes which are disturbed heavily from those in the training data.
-            More importantly, GR-1 is able to generalize to unseen object instances and categories in a zero-shot manner.
-            In the future, we hope to incorporate more video data in training to further enhance the robustness and generalization capability of GR-1.
-            In addition, we plan to scale up the robot data by increasing both the number of robot trajectories in diverse environments and the number of manipulation skills.
+            By incorporating large-scale video data, we showcase that GR-1 is able to perform robustly in scenes which
+            are disturbed heavily from those in the training data.
+            More importantly, GR-1 is able to generalize to unseen object instances and categories in a zero-shot
+            manner.
+            In the future, we hope to incorporate more video data in training to further enhance the robustness and
+            generalization capability of GR-1.
+            In addition, we plan to scale up the robot data by increasing both the number of robot trajectories in
+            diverse environments and the number of manipulation skills.
           </p>
         </div>
       </div>
     </div>
-</section>
+  </section>
 
-<section class="section">
-  <div class="columns is-centered has-text-centered">
+  <section class="section">
+    <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
         <h2 class="title" style="text-align: left;">BibTeX</h2>
         <div class="content has-text-justified">
@@ -555,20 +616,20 @@
         </div>
       </div>
     </div>
-</section>
+  </section>
 
-<footer class="footer">
-  <div class="container">
-    <div class="columns is-centered">
+  <footer class="footer">
+    <div class="container">
+      <div class="columns is-centered">
         <div class="content">
           <p style="font-size: 24px;">
-            The website template was adapted from <a
-              href="https://github.com/nerfies/nerfies.github.io">nerfies</a>.
+            The website template was adapted from <a href="https://github.com/nerfies/nerfies.github.io">nerfies</a>.
           </p>
         </div>
       </div>
-  </div>
-</footer>
+    </div>
+  </footer>
 
 </body>
+
 </html>
