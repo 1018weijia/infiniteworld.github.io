@@ -161,19 +161,19 @@
     <div class="content has-text-justified">
       <div class="columns is-centered has-text-centered">
         <div class="container">
-          <video poster="" id="calvin_0" autoplay controls muted loop playsinline width="24%"
+          <video poster="" id="benchmark1" autoplay controls muted loop playsinline width="24%"
             style="border-radius: 4%; position: relative; left: -1%;">
             <source src="static/videos/intro/calvin_0.mp4" type="video/mp4">
           </video>
-          <video poster="" id="calvin_1" autoplay controls muted loop playsinline width="24%"
+          <video poster="" id="benchmark2" autoplay controls muted loop playsinline width="24%"
             style="border-radius: 4%; ; position: relative; left: -0.5%;">
             <source src="static/videos/intro/calvin_1.mp4" type="video/mp4">
           </video>
-          <video poster="" id="calvin_2" autoplay controls muted loop playsinline width="24%"
+          <video poster="" id="benchmark3" autoplay controls muted loop playsinline width="24%"
             style="border-radius: 4%; position: relative; left: 0.5%;">
             <source src="static/videos/intro/calvin_2.mp4" type="video/mp4">
           </video>
-          <video poster="" id="calvin_3" autoplay controls muted loop playsinline width="24%"
+          <video poster="" id="benchmark4" autoplay controls muted loop playsinline width="24%"
             style="border-radius: 4%; ; position: relative; left: 1%;">
             <source src="static/videos/intro/calvin_3.mp4" type="video/mp4">
           </video>
@@ -212,9 +212,26 @@
       <div class="column is-four-fifths">
         <div class="content has-text-justified">
           <p style="font-size: 24px;">
-            Generative pre-trained models have demonstrated remarkable effectiveness in language and vision domains by
-            learning useful representations.
-            In this paper, we extend the scope of this effectiveness by showing that <b> visual robot manipulation </b>
+            Realizing scaling laws in embodied AI has become a focus. However, previous work has been scattered across
+            diverse simulation platforms, with assets and models lacking unified interfaces, which has led to
+            inefficiencies in research.To address this, we introduce InfiniteWorld, a unified and scalable simulator for
+            general vision-language robot interaction built on Nvidia Isaac Sim.InfiniteWorld encompasses a
+            comprehensive set of physics asset construction methods and generalized free robot interaction
+            benchmarks.Specifically, we first built a unified and scalable simulation framework for embodied learning
+            that integrates a series of improvements in generation-driven 3D asset construction, Real2Sim, automated
+            annotation framework, and unified 3D asset processing.
+            This framework provides a unified and scalable platform for robot interaction and learning.In addition, to
+            simulate realistic robot interaction, we build four new general benchmarks, including scene graph
+            collaborative exploration and open-world social mobile manipulation.The former is often overlooked as an
+            important task for robots to explore the environment and build scene knowledge, while the latter simulates
+            robot interaction tasks with different levels of knowledge agents based on the former.
+            They can more comprehensively evaluate the embodied agent's capabilities in environmental understanding,
+            task planning and execution, and intelligent interaction.
+            We hope that this work can provide the community with a systematic asset interface, alleviate the dilemma of
+            the lack of high-quality assets, and provide a more comprehensive evaluation of robot interactions.
+
+
+            <!-- In this paper, we extend the scope of this effectiveness by showing that <b> visual robot manipulation </b>
             can significantly benefit from <b>large-scale video generative pre-training</b>.
             We introduce <b>GR-1</b>, a straightforward GPT-style model designed for multi-task language-conditioned
             visual robot manipulation.
@@ -224,7 +241,7 @@
             Thanks to a flexible design, GR-1 can be seamlessly finetuned on robot data after pre-trained on a
             large-scale video dataset.
             We provide inaugural evidence that a unified GPT-style transformer, augmented with large-scale video
-            generative pre-training, exhibits remarkable generalization to multi-task visual robot manipulation. <br>
+            generative pre-training, exhibits remarkable generalization to multi-task visual robot manipulation. <br> -->
           </p>
         </div>
       </div>
