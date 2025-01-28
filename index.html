@@ -7,7 +7,7 @@
     content="InfiniteWorld: A Unified Scalable Simulation Framework for General Visual-Language Robot Interaction">
   <meta name="keywords" content="imitation learning, force-control, mobile manipulation, robots ">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Unleashing Large-Scale Video Generative Pre-training for Visual Robot Manipulation</title>
+  <title>Social Mobile Manipulation Challenge</title>
 
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
@@ -44,13 +44,13 @@
 
   <section class="hero">
     <div class="hero-body">
-      <h1 style="font-size: 55px; font-weight: bold; text-align: center;">InfiniteWorld: A Unified Scalable Simulation
-        Framework <br> for General Visual-Language Robot Interaction</h1>
+      <h1 style="font-size: 55px; font-weight: bold; text-align: center;">CVPR 2025 Embodied AI Workshop Challenge: <br>
+        Social Mobile Manipulation Challenge</h1>
       <div class="container is-max-desktop">
         <div class="columns is-centered">
           <div class="column has-text-centered">
             <div class="is-size-5 publication-authors" style="padding-top: 10px;">
-              <span class="author-block">
+              <!-- <span class="author-block">
                 Pengzhen Ren,
               </span>
               <span class="author-block">
@@ -106,11 +106,12 @@
               </span>
               <span class="author-block">
                 Xiaodan Liang
-              </span>
+              </span> -->
             </div>
             <br>
 
             <div class="is-size-5 publication-authors">
+              <span class="author-block">By &nbsp;&nbsp;</span>
               <span class="author-block">Peng Cheng Laboratory &nbsp;&nbsp;</span>
               <span class="author-block">Sun Yat-sen University &nbsp;&nbsp;</span>
               <span class="author-block">Southern University of Science and Technology &nbsp;&nbsp;</span>
@@ -206,47 +207,126 @@
         </div>
       </div>
 
-    </div>
 
+      <div class="columns is-centered has-text-centered">
+        <img id="robot_result" width="100%" src="static/images/challenge.png" />
+      </div>
+
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <div class="content has-text-justified">
+            <p style="font-size: 24px;">
+              Figure 1: The dynamic interaction environment that agents will navigate in both human-robot and
+              robot-robot tasks.
+            </p>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title is-1">Social Mobile Manipulation Challenge</h2>
+          <div class="content has-text-justified">
+            <p style="font-size: 24px;">
+              The 1st Social Mobile Manipulation Challenge focuses on developing embodied AI agents capable
+              of performing long sequences of complex tasks through social interactions. These tasks involve reasoning
+              about human intentions and planning within dynamic, multi-agent environments (Figure 1).
+              The challenge includes two interaction modes: human-robot and robot-robot. The goal is to advance
+              the community's capabilities in areas like human intention reasoning, long-term task planning, and
+              effective social interaction between embodied agents.
+            </p>
+          </div>
+        </div>
+      </div>
+  </section>
+
+  <section>
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
+        <h2 class="title is-1">Dataset</h2>
         <div class="content has-text-justified">
           <p style="font-size: 24px;">
-            Realizing scaling laws in embodied AI has become a focus. However, previous work has been scattered across
-            diverse simulation platforms, with assets and models lacking unified interfaces, which has led to
-            inefficiencies in research.To address this, we introduce InfiniteWorld, a unified and scalable simulator for
-            general vision-language robot interaction built on Nvidia Isaac Sim.InfiniteWorld encompasses a
-            comprehensive set of physics asset construction methods and generalized free robot interaction
-            benchmarks.Specifically, we first built a unified and scalable simulation framework for embodied learning
-            that integrates a series of improvements in generation-driven 3D asset construction, Real2Sim, automated
-            annotation framework, and unified 3D asset processing.
-            This framework provides a unified and scalable platform for robot interaction and learning.In addition, to
-            simulate realistic robot interaction, we build four new general benchmarks, including scene graph
-            collaborative exploration and open-world social mobile manipulation.The former is often overlooked as an
-            important task for robots to explore the environment and build scene knowledge, while the latter simulates
-            robot interaction tasks with different levels of knowledge agents based on the former.
-            They can more comprehensively evaluate the embodied agent's capabilities in environmental understanding,
-            task planning and execution, and intelligent interaction.
-            We hope that this work can provide the community with a systematic asset interface, alleviate the dilemma of
-            the lack of high-quality assets, and provide a more comprehensive evaluation of robot interactions.
-
-
-            <!-- In this paper, we extend the scope of this effectiveness by showing that <b> visual robot manipulation </b>
-            can significantly benefit from <b>large-scale video generative pre-training</b>.
-            We introduce <b>GR-1</b>, a straightforward GPT-style model designed for multi-task language-conditioned
-            visual robot manipulation.
-            GR-1 takes as inputs a language instruction, a sequence of observation images, and a sequence of robot
-            states.
-            It predicts robot actions as well as future images in <b> an end-to-end manner </b>.
-            Thanks to a flexible design, GR-1 can be seamlessly finetuned on robot data after pre-trained on a
-            large-scale video dataset.
-            We provide inaugural evidence that a unified GPT-style transformer, augmented with large-scale video
-            generative pre-training, exhibits remarkable generalization to multi-task visual robot manipulation. <br> -->
+            We will provide two main datasets for this challenge. The first dataset includes various human-robot
+            interaction tasks, designed for hierarchical knowledge-based interactions.
+            The second dataset involves robot-robot interactions where multiple agents collaborate on equal
+            terms to complete tasks.
+            <br>These datasets are currently under development and are expected to be released by 03/01/2025.
+            In case of delays, we plan to provide smaller, simplified versions of the datasets to ensure
+            participants can begin their work on time.
           </p>
         </div>
       </div>
     </div>
   </section>
+
+  <section>
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-1">Ethical considerations</h2>
+        <div class="content has-text-justified">
+          <p style="font-size: 24px;">
+            Since the challenge involves the development of autonomous agents,
+            careful attention is required when transferring policies trained in simulation to real-world environments.
+            Proper validation processes should be established to avoid unintended behaviors
+            in robots, especially in human-robot interaction scenarios.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-1">Submission evaluation</h2>
+        <div class="content has-text-justified">
+          <p style="font-size: 24px;">
+            Participants will submit their solution files, which will be evaluated
+            using our simulation platform based on NVIDIA's Isaac Sim. We will use the evalAI platform
+            to manage submissions and rerun code for the top submissions. Participants are expected to
+            submit both their code and a ReadMe file with clear instructions on how to execute their solution.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section>
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-1">Timeline</h2>
+        <div class="content has-text-justified">
+          <p style="font-size: 24px;">
+            The challenge will commence on 01/02/2025, with submissions due by 01/05/2025.
+            Final decisions will be shared with participants by 01/06/2025.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-1">Challenge organizers</h2>
+        <div class="content has-text-justified">
+          <p style="font-size: 24px;">
+            The challenge is organized by Xiaodan Liang (MBZUAI), Rongtao Xu
+            (MBZUAI), Pengzhen Ren (Pengcheng Laboratory), Bingqian Lin (Shanghai Jiao Tong University), Xiaojun Chang
+            (University of Technology Sydney), Ivan Laptev (MBZUAI), Ian Reid(MBZUAI), Cewu Lu (Shanghai Jiao Tong
+            University), Mingfei Han (MBZUAI), and Xiwen
+            Liang (Sun Yat-sen University).
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
 
   <section class="section">
     <div class="columns is-centered has-text-centered">
